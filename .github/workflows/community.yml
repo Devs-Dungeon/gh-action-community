@@ -1,0 +1,27 @@
+on:
+  fork:
+  push:
+    branches: [ main ]
+  issues:
+    types: [ opened ]
+  issue_comment:
+    types: [ created ]
+  pull_request_target:
+    types: [ opened ]
+  pull_request_review_comment:
+    types: [ created ]
+
+jobs:
+
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: Devs-Dungeon/gh-action-community/src/welcome@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: '<h1>Welcome to the DEVs Dungeon Community :rocket:</h1>'
+          pr-message: '<h1>Welcome to the DEVs Dungeon Community :nerd_face:</h1>'
+          footer: 'If you would like to collaborate on Open-Source Projects, Kaggle, CodeChef & Codeforces Competitions, and would like to do it with an amazing community, then join our <a href="https://discord.gg/ceMXzhfaka">Discord Server</a> and our <a href="https://github.com/Devs-Dungeon">GitHub Organisation</a>. Here we help, guide and encourage each other to contribute & collaborate on various projects & hackathons 😎.'
+  
+
