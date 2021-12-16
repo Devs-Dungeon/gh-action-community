@@ -1,0 +1,25 @@
+{
+  "name": "gh-action-community",
+  "version": "1.0.0",
+  "description": "GitHub Action for the Community, from welcoming first timers to badges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devs-Dungeon/gh-action-community.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devs-Dungeon/gh-action-community/issues"
+  },
+  "homepage": "https://github.com/Devs-Dungeon/gh-action-community#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "firebase-admin": "^9.1.1"
+  }
+}
