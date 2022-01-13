@@ -1,12 +1,11 @@
 # GitHub Action Community <img src="https://i.imgur.com/m6EYre1.png" width="50px">
 
-GitHub Action for the Community - from welcoming first timers to logging your activity for badges!
+GitHub Action for the Community - for welcoming first timers!
 
 ## GitHub Action Features 💡
 
 These GitHub Actions will:
 - reply to all new **Issues** and **Pull Requests**
-- log statistics of user activity to Firestore DB (Firebase)
   
 ## Quickstart
 
@@ -34,24 +33,6 @@ Example usage (you can change the replies for `issue-message` and `pr-message`)
           pr-message: '<h1>It''s great having you contribute to this project</h1> Feel free to create a <strong>Pull Request</strong>! Welcome to the community :nerd_face:'
 ```
 
-#### Options
-
-`footer` is an optional parameter, which can be used to append the `issue-message` and `pr-message`
-
-### Store community activity
-
-This GitHub Action will log statistics of user activity to Firestore DB (Firebase)
-
-```yaml
-  statistics:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: Devs-Dungeon/gh-action-community/src/statistics@main
-        if: ${{ <expression> }}
-        with:
-          firebase-key: ${{ secrets.FIREBASE_KEY }}
-```
 
 ## 🔗 Connect with Us
 [<img align="left" alt="Subham | Mail" width="80px" src="https://img.shields.io/badge/-Gmail-000000?logo=gmail&Color=0A66C2&style=flat-square" />][mail]
