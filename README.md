@@ -1,8 +1,8 @@
-# GitHub Action Community <img src="https://i.imgur.com/m6EYre1.png" width="50px">
+# GitHub Action Community
 
 GitHub Action for the Community - for welcoming first timers!
 
-## GitHub Action Features 💡
+## GitHub Action Features
 
 These GitHub Actions will:
 - reply to all new **Issues** and **Pull Requests**
